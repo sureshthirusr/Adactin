@@ -4,7 +4,6 @@ Background:
 	Given User launch the adactin application
 	When User log into the application 
 
-
 @SmokeTest
 Scenario Outline: Verify the User is able to login the application
 	Given User launches the application
@@ -56,17 +55,3 @@ Scenario: Verify user is in Booking ConfirmationPage
 	Then User verify Book Itinerary page navigates to successfully logged out page 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
