@@ -29,7 +29,7 @@ public class BaseClass {
 	public static WebDriver getBrowser(String browserName) throws Exception {
 		
 		
-		/*ChromeOptions opt=new ChromeOptions();
+		ChromeOptions opt=new ChromeOptions();
 		opt.addArguments("--ignore-certificate-errors");
 		opt.addArguments("chrome.switches", "--disable-extensions");
 		opt.addArguments("--disable-notifications");
@@ -37,7 +37,7 @@ public class BaseClass {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability(ChromeOptions.CAPABILITY, opt);
 		opt.merge(cap);
-		ChromeDriver driver = new ChromeDriver(opt);*/
+		ChromeDriver driver = new ChromeDriver(opt);
 
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
@@ -47,12 +47,12 @@ public class BaseClass {
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
 						System.getProperty("user.dir") + "\\drivers\\geckodriver.exe");
-				driver = new FirefoxDriver();
+				//driver = new FirefoxDriver();
 
 			} else if (browserName.equalsIgnoreCase("ie")) {
 				System.setProperty("webdriver.ie.driver",
 						System.getProperty("user.dir") + "\\drivers\\IEDriverServer.exe");
-				driver = new InternetExplorerDriver();
+				//driver = new InternetExplorerDriver();
 			} else {
 				throw new Exception("Browser Name is invalid");
 			}
